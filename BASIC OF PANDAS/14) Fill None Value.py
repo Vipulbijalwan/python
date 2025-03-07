@@ -9,7 +9,27 @@ data={
 
 df=pd.DataFrame(data)
  
+
+ #FILL 0 IN NONE PLACE
+# print(df)
+# df.fillna(0,inplace=True)
 print(df)
 
-df.fillna(0,inplace=True)
+
+
+ #FILL MEAN VALUE IN NONE PLACE
+"""df['Age'].fillna(df["Age"].mean(),inplace=True)
+df['Salary'].fillna(df["Salary"].mean(),inplace=True)"""
+
+# Interpolate vaalue
+
+"""
+
+EX- 10,20,nan,40,50
+
+interpolate()
+
+"""
+
+
 print(df)
